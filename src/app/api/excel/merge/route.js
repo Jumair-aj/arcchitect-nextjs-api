@@ -6,6 +6,7 @@ import ExcelJS from 'exceljs';
 import { writeFile } from 'fs/promises';
 import { v4 as uuidv4 } from 'uuid';
 
+export const maxDuration = 60;
 const excelToJSON = (buffer, sheetIndex) => {
   const workbook = XLSX.read(buffer);
   const sheetName = workbook.SheetNames[sheetIndex];
@@ -470,4 +471,4 @@ export async function OPTIONS() {
   return new NextResponse(null, { status: 204, headers: headers });
 }
 
-export const maxDuration = 5
+
