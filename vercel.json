@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/excel/merge/*.js": {
+      "maxDuration": 60
+    },
+    "api/excel/*.js": {
+      "maxDuration": 60
+    },
+  }
+}
